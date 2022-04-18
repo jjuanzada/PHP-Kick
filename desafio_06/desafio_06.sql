@@ -10,7 +10,7 @@ create table aluno(
 );
 
 create table disciplina(
-    codigo tinyint(6),
+    codigo int(11),
     nome varchar(20),
     descricao text
 );
