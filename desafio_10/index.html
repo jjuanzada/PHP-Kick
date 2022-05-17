@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4415fbfc59.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style_rules.css">
+    <link rel="stylesheet" href="styles/style_body.css">
+    <script src="scripts/validation.js"></script>
+    <script src="scripts/switch_menu.js"></script>
+</head>
+<body>
+
+    <div class="card center">
+        <form action="form.php" method="post" id="form" class="left">
+            <div class="container dark">
+                <h3 class="tertiary normal">
+                    Deixe aqui a sua dúvida:
+                </h3>
+                <div class="formLine">
+                    <div class="formItem">
+                        <label for="#nome">Nome</label>
+                        <input id="nome" type="text" placeholder="Nome e sobrenome" name="nome" required>
+                    </div>
+                </div>
+                <div class="formLine">
+                    <div class="formItem">
+                        <label>Gênero</label>
+                        <div class="formRadio">
+                            <input type="radio" name="gen" value="m">
+                            Ele/dele
+                        </div>
+                        <div class="formRadio">
+                            <input type="radio" name="gen" value="f">
+                            Ela/dela
+                        </div>
+                        <div class="formRadio">
+                            <input type="radio" name="gen" value="o" checked>
+                            Elo/delo
+                        </div>
+                    </div>
+                </div>
+                <div class="formLine">
+                    <div class="formItem">
+                        <label for="#email">Email</label>
+                        <input id="email" type="email" placeholder="Digite o email" name="email" required>
+                    </div>
+                    <div class="formItem">
+                        <label for="tel">Telefone</label>
+                        <input id="tel" type="tel" placeholder="Digite o telefone" name="tel" required>
+                    </div>
+                </div>
+                <div class="formLine">
+                    <div class="formItem">
+                        <label for="#mensagem">Dúvida</label>
+                        <input id="mensagem" type="text" placeholder="Digite a sua Mensagem" name="texto"
+                            required>
+                    </div>
+                </div>
+                <div class="item center">
+                    <button onclick="validation()" class="button text">
+                        <i class="fas fa-angle-right"></i> <span class="bolder">Enviar</span>
+                    </button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
